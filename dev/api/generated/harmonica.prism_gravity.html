@@ -39,8 +39,10 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/gallery-dataframe.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="harmonica.tesseroid_gravity" href="harmonica.tesseroid_gravity.html" />
@@ -260,17 +262,17 @@ contrasts produce positive anomalies.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>coordinates</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a><em> or </em><em>1d-array</em>) – List or array containing <code class="docutils literal notranslate"><span class="pre">easting</span></code>, <code class="docutils literal notranslate"><span class="pre">northing</span></code> and <code class="docutils literal notranslate"><span class="pre">upward</span></code> of
+<li><p><strong>coordinates</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><em>1d-array</em>) – List or array containing <code class="docutils literal notranslate"><span class="pre">easting</span></code>, <code class="docutils literal notranslate"><span class="pre">northing</span></code> and <code class="docutils literal notranslate"><span class="pre">upward</span></code> of
 the computation points defined on a Cartesian coordinate system.
 All coordinates should be in meters.</p></li>
-<li><p><strong>prisms</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a><em>, </em><em>1d-array</em><em>, or </em><em>2d-array</em>) – List or array containing the coordinates of the prism(s) in the
+<li><p><strong>prisms</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>1d-array</em><em>, or </em><em>2d-array</em>) – List or array containing the coordinates of the prism(s) in the
 following order:
 west, east, south, north, bottom, top in a Cartesian coordinate system.
 All coordinates should be in meters. Coordinates for more than one
 prism can be provided. In this case, <em>prisms</em> should be a list of lists
 or 2d-array (with one prism per line).</p></li>
-<li><p><strong>density</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a><em> or </em><em>array</em>) – List or array containing the density of each prism in kg/m^3.</p></li>
-<li><p><strong>field</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – <p>Gravitational field that wants to be computed.
+<li><p><strong>density</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><em>array</em>) – List or array containing the density of each prism in kg/m^3.</p></li>
+<li><p><strong>field</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – <p>Gravitational field that wants to be computed.
 The available fields are:</p>
 <ul>
 <li><p>Gravitational potential: <code class="docutils literal notranslate"><span class="pre">potential</span></code></p></li>
@@ -279,7 +281,7 @@ The available fields are:</p>
 </p></li>
 <li><p><strong>dtype</strong> (<em>data-type</em><em> (</em><em>optional</em><em>)</em>) – Data type assigned to the resulting gravitational field. Default to
 <code class="docutils literal notranslate"><span class="pre">np.float64</span></code>.</p></li>
-<li><p><strong>disable_checks</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a><em> (</em><em>optional</em><em>)</em>) – Flag that controls whether to perform a sanity check on the model.
+<li><p><strong>disable_checks</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em> (</em><em>optional</em><em>)</em>) – Flag that controls whether to perform a sanity check on the model.
 Should be set to <code class="docutils literal notranslate"><span class="pre">True</span></code> only when it is certain that the input model
 is valid and it does not need to be checked.
 Default to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
@@ -343,7 +345,7 @@ Default to <code class="docutils literal notranslate"><span class="pre">False</s
     <p>
         &copy; Copyright 2018-2020, The Harmonica Developers
       <span class="lastupdated">
-        Last updated on Feb 27, 2020.
+        Last updated on Nov 09, 2020.
       </span>
 
     </p>
